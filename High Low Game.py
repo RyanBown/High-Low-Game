@@ -46,7 +46,7 @@ def playGame(settings):
     endRange = settings[2]
     guessedRight = True
     rangeMessage = "Your range: " + str(startRange) + "-" + str(endRange) + '\n'
-    guessMessage = "Make your guess, next number will be [E]qual, [H]igher or [L]ower than "
+    guessMessage = "Make your guess, next number will be [E]qual, [H]igher or [L]ower than"
     hlInput = ['H', 'L', 'E']
     initNum = getRandomNumber(startRange, endRange)
     guessedWrong = "You've guessed wrong and it should have been"
@@ -61,7 +61,7 @@ def playGame(settings):
             break
         if resp in ['L','E'] and initNum < genNum:
             guessedRight = 0
-            print(guessedWrong, "[H]igher , the number",str(genNum))
+            print(guessedWrong, "[H]igher , the number was",str(genNum))
             break
         if resp in ['H','L'] and initNum == genNum:
             guessedRight = 0
@@ -110,7 +110,7 @@ introMessage = 'Do you know how the High Low game works?[Y/N]'
 if getUserInput(introMessage) == 'N':
     printRules(difficulty, diffDef)
 else:
-    print("Okay, hotshot let's do this@")
+    print("Okay, hotshot let's do this!")
 
 diffList = []
 diffPrintList = []
